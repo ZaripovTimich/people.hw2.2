@@ -1,9 +1,12 @@
 fun main() {
     val likes = 61
+    var personPeople: String;
 
-    if (likes % 10 == 1 && likes % 100 != 11) {
-        println("Понравилось ${likes} человеку");
+    if ((likes % 10 == 1) && (likes % 100 != 11)) {
+        personPeople = "человеку"
     } else {
-        println("Понравилось ${likes} людям")
+        personPeople = "людям"
     }
+
+    println("Понравилось $likes $personPeople")
 }
